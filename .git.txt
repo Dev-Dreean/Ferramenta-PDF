@@ -1,0 +1,26 @@
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+build/
+dist/
+*.egg-info/
+.vscode/
+*.sqlite3
+*.zip
+*.tar.gz
+.DS_Store
+Thumbs.db
+node_modules/
+# Temp files
+*.log
+# Editor
+.idea/
+*.iml
+# Ignore OS files
+ehthumbs.db
+desktop.ini
