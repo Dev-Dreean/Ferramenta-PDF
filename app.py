@@ -6,8 +6,16 @@ import fitz
 from PIL import Image
 import webbrowser
 import signal
+from asgiref.wsgi import WsgiToAsgi
+
 
 app = Flask(__name__)
+@app.route("/favicon.ico")
+def favicon():
+    return ("", 204)
+
+# expõe versão ASGI do Flask para o uvicorn
+asgi_app = WsgiToAsgi(app)
 
 tasks = {}
 MEMORY_LIMIT_MB = 512

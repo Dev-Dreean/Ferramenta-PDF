@@ -3,3 +3,4 @@ pypdf
 PyMuPDF
 Pillow
 uvicorn[standard]
+asgiref
